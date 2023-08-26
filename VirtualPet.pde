@@ -9,13 +9,13 @@ function draw()
 
 
 // right short leg
-glpushMatrix();
+push();
 noStroke();
 fill(#EAD3D3);
 translate(286, 360);
 rotate(radians(30));
 ellipse(0, 0, 15, 50);
-glpopMatrix();
+pop();
 
 //right long leg
 push();
