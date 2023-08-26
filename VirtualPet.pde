@@ -27,22 +27,22 @@ ellipse(0,0, 12, 100);
 glpopMatrix();
 
 //left short leg
-glpushMatrix();
+push();
 noStroke();
 fill(#EAD3D3);
 translate(225, 342);
 rotate(radians(35));
 ellipse(0, 0, 12, 60);
-glpopMatrix();
+pop();
 
 //left long leg
-glpushMatrix();
+push();
 noStroke();
 fill(#EAD3D3);
 translate(225, 400);
 rotate(radians(340));
 ellipse(0, 0, 12, 90);
-glpopMatrix();
+pop();
 
 //left foot
 fill(#EAD3D3);
