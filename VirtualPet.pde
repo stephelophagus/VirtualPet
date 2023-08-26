@@ -12,8 +12,8 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#EAD3D3);
-  translate(286, 360);
-  rotate(radians(30));
+  glTranslatef(286, 360);
+  glRotatef(radians(30));
   ellipse(0, 0, 15, 50);
   glPopMatrix();
   
@@ -21,8 +21,8 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#EAD3D3);
-  translate(309,410);
-  rotate(radians(313));
+  glTranslatef(309,410);
+  glRotatef(radians(313));
   ellipse(0,0, 12, 100);
   glPopMatrix();
   
@@ -30,8 +30,8 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#EAD3D3);
-  translate(225, 342);
-  rotate(radians(35));
+  glTranslatef(225, 342);
+  glRotatef(radians(35));
   ellipse(0, 0, 12, 60);
   glPopMatrix();
   
@@ -39,8 +39,8 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#EAD3D3);
-  translate(225, 400);
-  rotate(radians(340));
+  glTranslatef(225, 400);
+  glRotatef(radians(340));
   ellipse(0, 0, 12, 90);
   glPopMatrix();
   
@@ -55,8 +55,8 @@ void draw()
   //right ear
   glPushMatrix();
   fill(#F0D3D3);
-  translate(420, 235);
-  rotate(radians(174));
+  glTranslatef(420, 235);
+  glRotatef(radians(174));
   ellipse(0, 0, 14, 60);
   glPopMatrix();
   
@@ -70,15 +70,15 @@ void draw()
   //fingres
   glPushMatrix();
   fill(#C48383);
-  translate(395, 364);
-  rotate(radians(15));
+  glTranslatef(395, 364);
+  glRotatef(radians(15));
   ellipse(0, 0, 14, 4);
   glPopMatrix();  
   
   push();
   fill(#C48383);
-  translate(399, 359);
-  rotate(radians(5));
+  glTranslatef(399, 359);
+  glRotatef(radians(5));
   ellipse(0, 0, 14, 4);
   glPopMatrix();  
   
@@ -87,8 +87,8 @@ void draw()
   //arm 
   glPushMatrix();
   fill(#F0E9DF);
-  translate(365, 352);
-  rotate(radians(15));
+  glTranslatef(365, 352);
+  glRotatef(radians(15));
   ellipse(0, 0, 70, 16);
   glPopMatrix();  
   
@@ -105,48 +105,48 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#F7C0C0);
-  translate(201, 285);
-  rotate(radians(190));
+  glTranslatef(201, 285);
+  glRotatef(radians(190));
   ellipse(0, 0, 70, 10);
   glPopMatrix();
   
   glPushMatrix();
   noStroke();
   fill(#F7C0C0);
-  translate(165, 286);
-  rotate(radians(50));
+  glTranslatef(165, 286);
+  glRotatef(radians(50));
   ellipse(0, 0, 10, 20);
   glPopMatrix(); 
   
   glPushMatrix();
   noStroke();
   fill(#F7C0C0);
-  translate(157, 310);
-  rotate(radians(10));
+  glTranslatef(157, 310);
+  glRotatef(radians(10));
   ellipse(0, 0, 10, 50);
   glPopMatrix();
   
   glPushMatrix();
   noStroke();
   fill(#F7C0C0);
-  translate(164, 350);
-  rotate(radians(150));
+  glTranslatef(164, 350);
+  glRotatef(radians(150));
   ellipse(0, 0, 10, 50);
   glPopMatrix();
   
   glPushMatrix();
   noStroke();
   fill(#F7C0C0);
-  translate(180, 390);
-  rotate(radians(170));
+  glTranslatef(180, 390);
+  glRotatef(radians(170));
   ellipse(0, 0, 10, 50);
   glPopMatrix();
   
   glPushMatrix();
   noStroke();
   fill(#F7C0C0);
-  translate(181, 420);
-  rotate(radians(20));
+  glTranslatef(181, 420);
+  glRotatef(radians(20));
   ellipse(0, 0, 9, 20);
   glPopMatrix();
   
@@ -154,16 +154,16 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#FFFFFF);
-  translate(95, 410);
-  rotate(radians(200));
+  glTranslatef(95, 410);
+  glRotatef(radians(200));
   ellipse(0, 0, 40, 7);
   glPopMatrix();
   
   glPushMatrix();
   noStroke();
   fill(#FFFFFF);
-  translate(70, 400);
-  rotate(radians(200));
+  glTranslatef(70, 400);
+  glRotatef(radians(200));
   ellipse(0, 0, 20, 4);
   glPopMatrix();
   
@@ -171,8 +171,8 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#625044);
-  translate(140, 426);
-  rotate(radians(195));
+  glTranslatef(140, 426);
+  glRotatef(radians(195));
   ellipse(0, 0, 70, 10);
   glPopMatrix();
   
@@ -180,8 +180,8 @@ void draw()
   glPushMatrix();
   noStroke();
   fill(#E8DADA);
-  translate(171, 430);
-  rotate(radians(160));
+  glTranslatef(171, 430);
+  glRotatef(radians(160));
   ellipse(0, 0, 19, 9);
   glPopMatrix();
   
@@ -195,16 +195,16 @@ void draw()
   
   //snout
   glPushMatrix();
-  translate(434,337);
-  rotate(radians(65));
+  glTranslatef(434,337);
+  glRotatef(radians(65));
   ellipse(0, 0, 40, 50);
   glPopMatrix();
   
   //nose
   glPushMatrix();
   fill(#C48383);
-  translate(447,337);
-  rotate(radians(37));
+  glTranslatef(447,337);
+  glRotatef(radians(37));
   ellipse(0, 0, 10, 18);
   glPopMatrix();
   
@@ -220,8 +220,8 @@ void draw()
   //left ear
   glPushMatrix();
   fill(#F0D3D3);
-  translate(360,235);
-  rotate(radians(150));
+  glTranslatef(360,235);
+  glRotatef(radians(150));
   ellipse(0, 0, 40, 60);
   glPopMatrix();
 
