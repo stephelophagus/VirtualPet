@@ -18,31 +18,31 @@ ellipse(0, 0, 15, 50);
 glpopMatrix();
 
 //right long leg
-push();
+glpushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(309,410);
 rotate(radians(313));
 ellipse(0,0, 12, 100);
-pop();
+glpopMatrix();
 
 //left short leg
-push();
+glpushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(225, 342);
 rotate(radians(35));
 ellipse(0, 0, 12, 60);
-pop();
+glpopMatrix();
 
 //left long leg
-push();
+glpushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(225, 400);
 rotate(radians(340));
 ellipse(0, 0, 12, 90);
-pop();
+glpopMatrix();
 
 //left foot
 fill(#EAD3D3);
