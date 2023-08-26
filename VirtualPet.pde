@@ -9,13 +9,13 @@ void draw()
 
 
 // right short leg
-glPushMatrix();
+push();
 noStroke();
 fill(#EAD3D3);
 translate(286, 360);
 rotate(radians(30));
 ellipse(0, 0, 15, 50);
-glPopMatrix();
+pop();
 
 //right long leg
 push();
@@ -194,11 +194,11 @@ ellipse(300,280,180,150);
 
 
 //snout
-push();
+glPushMatrix();
 translate(434,337);
 rotate(radians(65));
 ellipse(0, 0, 40, 50);
-pop();
+glPopMatrix();
 
 //nose
 push();
