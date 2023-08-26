@@ -9,13 +9,13 @@ void draw()
 
 
 // right short leg
-push();
+pushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(286, 360);
 rotate(radians(30));
 ellipse(0, 0, 15, 50);
-pop();
+popMatrix();
 
 //right long leg
 push();
