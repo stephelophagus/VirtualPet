@@ -9,13 +9,13 @@ void draw()
 
 
 // right short leg
-pg.push();
+push();
 noStroke();
 fill(#EAD3D3);
 translate(286, 360);
 rotate(radians(30));
 ellipse(0, 0, 15, 50);
-pg.pop();
+pop();
 
 //right long leg
 push();
