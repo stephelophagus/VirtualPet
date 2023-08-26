@@ -75,7 +75,7 @@ void draw()
   ellipse(0, 0, 14, 4);
   glPopMatrix();  
   
-  push();
+  glPushMatrix();
   fill(#C48383);
   glTranslatef(399, 359);
   glRotatef(radians(5));
