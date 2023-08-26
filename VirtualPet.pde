@@ -1,10 +1,10 @@
-void setup()
+function setup()
 {
-  size(600,600);
-  background(#000000); and 
+  createCanvas(600,600); 
 }
 
-void draw()
+function draw()
+  background(#000000); 
 {
 
 
