@@ -1,3 +1,6 @@
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
 void setup()
 {
   size(600,600);
