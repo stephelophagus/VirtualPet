@@ -18,14 +18,13 @@ ellipse(0, 0, 15, 50);
 glpopMatrix();
 
 //right long leg
-glpushMatrix();
+push();
 noStroke();
 fill(#EAD3D3);
 translate(309,410);
 rotate(radians(313));
 ellipse(0,0, 12, 100);
-glpopMatrix();
-
+pop();
 //left short leg
 push();
 noStroke();
