@@ -1,5 +1,5 @@
 const canvas = document.getElementById('myCanvas');
-const ctx = canvas.getContext('2d');
+const ctx = canvas.getContext('2d'); 
 
 void setup()
 {
@@ -14,41 +14,41 @@ void draw()
 // right short leg
 ctx.save();
 noStroke();
-fill(#EAD3D3);
-translate(286, 360);
-rotate(radians(30));
+ctx.fill(#EAD3D3);
+ctx.translate(286, 360);
+ctx.rotate(radians(30));
 ellipse(0, 0, 15, 50);
 ctx.restore();
 
 //right long leg
-push();
-noStroke();
-fill(#EAD3D3);
-translate(309,410);
-rotate(radians(313));
+save();
+ctx.noStroke();
+ctx.fill(#EAD3D3);
+ctx.translate(309,410);
+ctx.rotate(radians(313));
 ellipse(0,0, 12, 100);
-pop();
+ctx.restore();
 
 //left short leg
-push();
+ctx.save();
 noStroke();
-fill(#EAD3D3);
-translate(225, 342);
-rotate(radians(35));
+ctx.fill(#EAD3D3);
+ctx.translate(225, 342);
+ctx.rotate(radians(35));
 ellipse(0, 0, 12, 60);
-pop();
+ctx.restore();
 
 //left long leg
-push();
+ctx.save();
 noStroke();
-fill(#EAD3D3);
-translate(225, 400);
-rotate(radians(340));
+ctx.fill(#EAD3D3);
+ctx.translate(225, 400);
+ctx.rotate(radians(340));
 ellipse(0, 0, 12, 90);
-pop();
+ctx.restore();
 
 //left foot
-fill(#EAD3D3);
+ctx.fill(#EAD3D3);
 triangle(235, 428, 227, 455, 255, 455);
 
 //right foot
@@ -56,44 +56,44 @@ triangle(235, 428, 227, 455, 255, 455);
 triangle(333, 428, 350, 455, 372, 455);
 
 //right ear
-push();
-fill(#F0D3D3);
-translate(420, 235);
+ctx.save();
+ctx.fill(#F0D3D3);
+ctx.translate(420, 235);
 rotate(radians(174));
 ellipse(0, 0, 14, 60);
-pop();
+ctx.restore();
 
 
 //head
 noStroke();
-fill(#EAC793);
+ctx.fill(#EAC793);
 ellipse(395,295,130,110);
 
 
 //fingres
-push();
-fill(#C48383);
-translate(395, 364);
-rotate(radians(15));
+ctx.save();
+ctx.fill(#C48383);
+ctx.translate(395, 364);
+ctx.rotate(radians(15));
 ellipse(0, 0, 14, 4);
-pop();  
+ctx.restore();  
 
-push();
-fill(#C48383);
-translate(399, 359);
-rotate(radians(5));
+ctx.save();
+ctx.fill(#C48383);
+ctx.translate(399, 359);
+ctx.rotate(radians(5));
 ellipse(0, 0, 14, 4);
-pop();  
+ctx.restore();  
 
 
 
 //arm 
-push();
-fill(#F0E9DF);
-translate(365, 352);
-rotate(radians(15));
+ctx.save();
+ctx.fill(#F0E9DF);
+ctx.translate(365, 352);
+ctx.rotate(radians(15));
 ellipse(0, 0, 70, 16);
-pop();  
+ctx.restore();  
 
 //whiskers
 stroke(#FFFFFF);
@@ -105,128 +105,128 @@ line(451, 333, 471, 300);
 line(453, 333, 479, 309);
 
 //tail
-push();
+ctx.save();
 noStroke();
-fill(#F7C0C0);
-translate(201, 285);
-rotate(radians(190));
+ctx.fill(#F7C0C0);
+ctx.translate(201, 285);
+ctx.rotate(radians(190));
 ellipse(0, 0, 70, 10);
-pop();
+ctx.restore();
 
-push();
+ctx.save();
 noStroke();
 fill(#F7C0C0);
-translate(165, 286);
-rotate(radians(50));
+ctx.translate(165, 286);
+ctx.rotate(radians(50));
 ellipse(0, 0, 10, 20);
-pop(); 
+ctx.restore(); 
 
-push();
+ctx.save();
 noStroke();
-fill(#F7C0C0);
-translate(157, 310);
-rotate(radians(10));
+ctx.fill(#F7C0C0);
+ctx.translate(157, 310);
+ctx.rotate(radians(10));
 ellipse(0, 0, 10, 50);
-pop();
+ctx.restore();
 
-push();
+ctx.save();
 noStroke();
-fill(#F7C0C0);
-translate(164, 350);
-rotate(radians(150));
+ctx.fill(#F7C0C0);
+ctx.translate(164, 350);
+ctx.rotate(radians(150));
 ellipse(0, 0, 10, 50);
-pop();
+ctx.restore();
 
-push();
+ctx.save();
 noStroke();
-fill(#F7C0C0);
-translate(180, 390);
-rotate(radians(170));
+ctx.fill(#F7C0C0);
+ctx.translate(180, 390);
+ctx.rotate(radians(170));
 ellipse(0, 0, 10, 50);
-pop();
+ctx.restore();
 
-push();
+ctx.save();
 noStroke();
-fill(#F7C0C0);
-translate(181, 420);
-rotate(radians(20));
+ctx.fill(#F7C0C0);
+ctx.translate(181, 420);
+ctx.rotate(radians(20));
 ellipse(0, 0, 9, 20);
-pop();
+ctx.restore();
 
 //white part
-push();
+ctx.save();
 noStroke();
-fill(#FFFFFF);
-translate(95, 410);
-rotate(radians(200));
+ctx.fill(#FFFFFF);
+ctx.translate(95, 410);
+ctx.rotate(radians(200));
 ellipse(0, 0, 40, 7);
-pop();
+ctx.restore();
 
-push();
+ctx.save();
 noStroke();
-fill(#FFFFFF);
-translate(70, 400);
-rotate(radians(200));
+ctx.fill(#FFFFFF);
+ctx.translate(70, 400);
+ctx.rotate(radians(200));
 ellipse(0, 0, 20, 4);
-pop();
+ctx.restore();
 
 //brown part
-push();
+ctx.save();
 noStroke();
-fill(#625044);
-translate(140, 426);
-rotate(radians(195));
+ctx.fill(#625044);
+ctx.translate(140, 426);
+ctx.rotate(radians(195));
 ellipse(0, 0, 70, 10);
-pop();
+ctx.restore();
 
 //small light part
-push();
+ctx.save();
 noStroke();
-fill(#E8DADA);
-translate(171, 430);
-rotate(radians(160));
+ctx.fill(#E8DADA);
+ctx.translate(171, 430);
+ctx.rotate(radians(160));
 ellipse(0, 0, 19, 9);
-pop();
+ctx.restore();
 
 
 
 //main body
-fill(#EAC793);
+ctx.fill(#EAC793);
 noStroke();
 ellipse(300,280,180,150);
 
 
 //snout
-push();
-translate(434,337);
-rotate(radians(65));
+ctx.save();
+ctx.translate(434,337);
+ctx.rotate(radians(65));
 ellipse(0, 0, 40, 50);
-pop();
+ctx.restore();
 
 //nose
-push();
-fill(#C48383);
-translate(447,337);
-rotate(radians(37));
+ctx.save();
+ctx.fill(#C48383);
+ctx.translate(447,337);
+ctx.rotate(radians(37));
 ellipse(0, 0, 10, 18);
-pop();
+ctx.restore();
 
 //eyes
-fill(#000000);
+ctx.fill(#000000);
 ellipse(390,310, 30, 28);
 
-fill(#FFFFFF);
+ctx.fill(#FFFFFF);
 ellipse(396, 306, 6, 4);
 
 
 
 //left ear
-push();
-fill(#F0D3D3);
-translate(360,235);
-rotate(radians(150));
+ctx.save();
+ctx.fill(#F0D3D3);
+ctx.translate(360,235);
+ctx.rotate(radians(150));
 ellipse(0, 0, 40, 60);
-pop();
+ctx.restore();
 
 
 }
