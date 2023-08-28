@@ -1,3 +1,5 @@
+import "./processing.js";
+
 PMatrixStack matrixStack = new PMatrixStack();
 
 void push() {
