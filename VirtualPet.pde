@@ -1,14 +1,15 @@
 import push from "./processing.js";
 import pop from "./processing.js";
 
-
-
-function setup() {
+void setup()
+{
   size(600,600);
-  background(#000000);
+  background(#000000); and 
 }
 
-function draw() {
+void draw()
+{
+
 
 // right short leg
 push();
