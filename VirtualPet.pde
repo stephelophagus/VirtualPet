@@ -1,17 +1,6 @@
 import "./processing.js";
 
-PMatrixStack matrixStack = new PMatrixStack();
 
-void pushMatrix() {
-    PMatrix currentMatrix = getMatrix();
-    matrixStack.push(currentMatrix.get());
-}
-
-void popMatrix() {
-    if (!matrixStack.isEmpty()) {
-        setMatrix(matrixStack.pop());
-    }
-}
 
 
 void setup()
