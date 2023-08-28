@@ -1,5 +1,6 @@
 import push from "./processing.js";
-<script src="C:\Users\Stephanie\Downloads\p5.js"></script>
+import pop from "./processing.js";
+
 
 
 function setup() {
