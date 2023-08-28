@@ -1,14 +1,15 @@
-import push from "p5.js";
-import pop from "p5.js";
-
-void setup()
-{
-  size(600,600);
-  background(#000000); 
-}
+<script src="C:\Users\Stephanie\Downloads\p5.js"></script>
 
 void draw()
 {
+
+function setup() {
+  size(600,600);
+  background(#000000);
+}
+
+function draw() {
+   
 
 
 // right short leg
