@@ -2,12 +2,12 @@ import "./processing.js";
 
 PMatrixStack matrixStack = new PMatrixStack();
 
-void push() {
+void pushMatrix() {
     PMatrix currentMatrix = getMatrix();
     matrixStack.push(currentMatrix.get());
 }
 
-void pop() {
+void popMatrix() {
     if (!matrixStack.isEmpty()) {
         setMatrix(matrixStack.pop());
     }
@@ -25,40 +25,40 @@ void draw()
 
 
 // right short leg
-push();
+pushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(286, 360);
 rotate(radians(30));
 ellipse(0, 0, 15, 50);
-pop();
+popMatrix();
 
 //right long leg
-push();
+pushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(309,410);
 rotate(radians(313));
 ellipse(0,0, 12, 100);
-pop();
+popMatrix();
 
 //left short leg
-push();
+pushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(225, 342);
 rotate(radians(35));
 ellipse(0, 0, 12, 60);
-pop();
+popMatrix();
 
 //left long leg
-push();
+pushMatrix();
 noStroke();
 fill(#EAD3D3);
 translate(225, 400);
 rotate(radians(340));
 ellipse(0, 0, 12, 90);
-pop();
+popMatrix();
 
 //left foot
 fill(#EAD3D3);
@@ -69,12 +69,12 @@ triangle(235, 428, 227, 455, 255, 455);
 triangle(333, 428, 350, 455, 372, 455);
 
 //right ear
-push();
+pushMatrix();
 fill(#F0D3D3);
 translate(420, 235);
 rotate(radians(174));
 ellipse(0, 0, 14, 60);
-pop();
+popMatrix();
 
 
 //head
@@ -84,29 +84,29 @@ ellipse(395,295,130,110);
 
 
 //fingres
-push();
+pushMatrix();
 fill(#C48383);
 translate(395, 364);
 rotate(radians(15));
 ellipse(0, 0, 14, 4);
-pop();  
+popMatrix();  
 
-push();
+pushMatrix();
 fill(#C48383);
 translate(399, 359);
 rotate(radians(5));
 ellipse(0, 0, 14, 4);
-pop();  
+popMatrix();  
 
 
 
 //arm 
-push();
+pushMatrix();
 fill(#F0E9DF);
 translate(365, 352);
 rotate(radians(15));
 ellipse(0, 0, 70, 16);
-pop();  
+popMatrix();  
 
 //whiskers
 stroke(#FFFFFF);
@@ -118,88 +118,88 @@ line(451, 333, 471, 300);
 line(453, 333, 479, 309);
 
 //tail
-push();
+pushMatrix();
 noStroke();
 fill(#F7C0C0);
 translate(201, 285);
 rotate(radians(190));
 ellipse(0, 0, 70, 10);
-pop();
+popMatrix();
 
-push();
+pushMatrix();
 noStroke();
 fill(#F7C0C0);
 translate(165, 286);
 rotate(radians(50));
 ellipse(0, 0, 10, 20);
-pop(); 
+popMatrix(); 
 
-push();
+pushMatrix();
 noStroke();
 fill(#F7C0C0);
 translate(157, 310);
 rotate(radians(10));
 ellipse(0, 0, 10, 50);
-pop();
+popMatrix();
 
-push();
+pushMatrix();
 noStroke();
 fill(#F7C0C0);
 translate(164, 350);
 rotate(radians(150));
 ellipse(0, 0, 10, 50);
-pop();
+popMatrix();
 
-push();
+pushMatrix();
 noStroke();
 fill(#F7C0C0);
 translate(180, 390);
 rotate(radians(170));
 ellipse(0, 0, 10, 50);
-pop();
+popMatrix();
 
-push();
+pushMatrix();
 noStroke();
 fill(#F7C0C0);
 translate(181, 420);
 rotate(radians(20));
 ellipse(0, 0, 9, 20);
-pop();
+popMatrix();
 
 //white part
-push();
+pushMatrix();
 noStroke();
 fill(#FFFFFF);
 translate(95, 410);
 rotate(radians(200));
 ellipse(0, 0, 40, 7);
-pop();
+popMatrix();
 
-push();
+pushMatrix();
 noStroke();
 fill(#FFFFFF);
 translate(70, 400);
 rotate(radians(200));
 ellipse(0, 0, 20, 4);
-pop();
+popMatrix();
 
 //brown part
-push();
+pushMatrix();
 noStroke();
 fill(#625044);
 translate(140, 426);
 rotate(radians(195));
 ellipse(0, 0, 70, 10);
-pop();
+popMatrix();
 
 //small light part
-push();
+pushMatrix();
 noStroke();
 fill(#E8DADA);
 translate(171, 430);
 rotate(radians(160));
 ellipse(0, 0, 19, 9);
-pop();
+popMatrix();
 
 
 
@@ -210,19 +210,19 @@ ellipse(300,280,180,150);
 
 
 //snout
-push();
+pushMatrix();
 translate(434,337);
 rotate(radians(65));
 ellipse(0, 0, 40, 50);
-pop();
+popMatrix();
 
 //nose
-push();
+pushMatrix();
 fill(#C48383);
 translate(447,337);
 rotate(radians(37));
 ellipse(0, 0, 10, 18);
-pop();
+popMatrix();
 
 //eyes
 fill(#000000);
@@ -234,12 +234,12 @@ ellipse(396, 306, 6, 4);
 
 
 //left ear
-push();
+pushMatrix();
 fill(#F0D3D3);
 translate(360,235);
 rotate(radians(150));
 ellipse(0, 0, 40, 60);
-pop();
+popMatrix();
 }
 
 
