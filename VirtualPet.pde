@@ -6,7 +6,7 @@ import pop from "./processing.js";
 void setup()
 {
   size(600,600);
-  background(#000000); and 
+  background(#000000);  
 }
 
 void draw()
