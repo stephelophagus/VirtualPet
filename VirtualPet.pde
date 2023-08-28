@@ -1,3 +1,5 @@
+import push from processing.js
+
 void setup()
 {
   size(600,600);
