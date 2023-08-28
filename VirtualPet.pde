@@ -1,10 +1,10 @@
-function setup()
+void setup()
 {
-  createCanvas(600,600); 
+  size(600,600);
+  background(#000000); 
 }
 
-function draw()
-  background(#000000); 
+void draw()
 {
 
 
@@ -224,6 +224,6 @@ translate(360,235);
 rotate(radians(150));
 ellipse(0, 0, 40, 60);
 pop();
-
-
 }
+
+
