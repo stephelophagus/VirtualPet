@@ -1,7 +1,6 @@
+import push from "./processing.js";
 <script src="C:\Users\Stephanie\Downloads\p5.js"></script>
 
-void draw()
-{
 
 function setup() {
   size(600,600);
@@ -9,8 +8,6 @@ function setup() {
 }
 
 function draw() {
-   
-
 
 // right short leg
 push();
